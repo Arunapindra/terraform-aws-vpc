@@ -78,6 +78,9 @@ resource "aws_db_subnet_group" "default" {
 #ELASTIC IP FOR NAT
 resource "aws_eip" "nat" {
   domain   = "vpc"
+{
+    Name = "E.IP-expense-vpc"
+}
 }
 #NAT_GATEWAY
 resource "aws_nat_gateway" "main" {
